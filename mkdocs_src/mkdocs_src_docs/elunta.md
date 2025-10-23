@@ -12,6 +12,11 @@
   
 [![Preview](pdfs/previews/kanduknopen.png){ width="100" style="border-radius:12px;" }](pdfs/kanduknopen.pdf)
 
+- :material-file-pdf-box:{ .lg .red } **Ovan molnen**  
+  _Introduktion_  
+  [:arrow_down_small: Download PDF](pdfs/ovanmolnen.pdf)  
+  
+[![Preview](pdfs/previews/ovanmolnen.png){ width="100" style="border-radius:12px;" }](pdfs/ovanmolnen.pdf)
 
 </div>
 
