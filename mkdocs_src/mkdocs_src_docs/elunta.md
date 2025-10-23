@@ -1,22 +1,38 @@
 # E-lunta
 
-
-
-
-
 <div class="grid cards" markdown>
 
-- :material-file-pdf-box:{ .lg .red } **Kan du knopen? – Knopspåret**  
+- **Kan du knopen? – Knopspåret**  
   _Introduktion_  
-  [:arrow_down_small: Download PDF](pdfs/kanduknopen.pdf)  
+  [Download PDF](pdfs/kanduknopen.pdf)  
   
-[![Preview](pdfs/previews/kanduknopen.png){ width="100" style="border-radius:12px;" }](pdfs/kanduknopen.pdf)
+[![Preview](pdfs/previews/kanduknopen.png){ width="150" style="border-radius:12px;" }](pdfs/kanduknopen.pdf)
 
-- :material-file-pdf-box:{ .lg .red } **Ovan molnen**  
+- **Ovan molnen**  
   _Introduktion_  
-  [:arrow_down_small: Download PDF](pdfs/ovanmolnen.pdf)  
+  [Download PDF](pdfs/kanduknopen.pdf)  
   
-[![Preview](pdfs/previews/ovanmolnen.png){ width="100" style="border-radius:12px;" }](pdfs/ovanmolnen.pdf)
+[![Preview](pdfs/previews/kanduknopen.png){ width="150" style="border-radius:12px;" }](pdfs/kanduknopen.pdf)
+
+- **Naturnäran**  
+  _Introduktion_  
+  [Download PDF](pdfs/kanduknopen.pdf)  
+  
+[![Preview](pdfs/previews/kanduknopen.png){ width="150" style="border-radius:12px;" }](pdfs/kanduknopen.pdf)
+
+- **Träck track**  
+  _Introduktion_  
+  [Download PDF](pdfs/kanduknopen.pdf)  
+  
+[![Preview](pdfs/previews/kanduknopen.png){ width="150" style="border-radius:12px;" }](pdfs/kanduknopen.pdf)
+
+- **Kompismärket**  
+  _Introduktion_  
+  [Download PDF](pdfs/kanduknopen.pdf)  
+  
+[![Preview](pdfs/previews/kanduknopen.png){ width="150" style="border-radius:12px;" }](pdfs/kanduknopen.pdf)
+
+
 
 </div>
 
