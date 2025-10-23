@@ -5,9 +5,37 @@ site_url: https://danielmartling.github.io/effective-fishstick/docs/
 nav:
     - Index: index.md
     - About: about.md
+    - E-lunta: elunta.md
 theme:
-  name: mkdocs
   language: sv
-  palette:
-    accent: yellow
+  name: material
+  features: 
+    - content.cards
+    - content.code.copy
+  palette: 
+    - primary: blue grey
+    - accent: yellow
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 repo_url: https://github.com/danielmartling/effective-fishstick
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
