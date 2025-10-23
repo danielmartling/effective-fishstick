@@ -1,0 +1,51 @@
+name: Build and Deploy MkDocs site
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write   # Allows pushing back to the repo
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code
+      - uses: actions/checkout@v4
+
+      # Configure Git Credentials
+      - name: Configure Git Credentials
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      # Set up Python
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # Install mkdocs and mkdocs-material
+      - run: pip install mkdocs mkdocs-material
+
+      # Optional: Cache dependencies for faster builds (useful if you're installing many dependencies)
+      - name: Cache MkDocs dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: mkdocs-${{ runner.os }}-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            mkdocs-${{ runner.os }}-
+
+      # Build the MkDocs site
+      - name: Build MkDocs
+        run: mkdocs build --config-file mkdocs_src/mkdocs.yml
+
+      # Commit and push the built docs (if there are changes)
+      - name: Commit and push docs
+        run: |
+          git add docs
+          git diff --cached --quiet || git commit -m "Update docs [skip ci]"
+          git push
