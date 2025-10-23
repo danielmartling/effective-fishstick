@@ -1,6 +1,13 @@
 site_name: Sitename Docs
 docs_dir: mkdocs_src_docs
 site_dir: ../docs
+site_url: https://danielmartling.github.io/effective-fishstick/docs/
 nav:
     - Index: index.md
     - About: about.md
+theme:
+  name: material
+  language: sv
+  palette:
+    accent: yellow
+repo_url: https://github.com/danielmartling/effective-fishstick
